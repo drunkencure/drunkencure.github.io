@@ -1,33 +1,28 @@
-# Profile information
-name: 'Drunken'
-title: "Drunken's blog"
-description: '다양한 잡설을 올리는 블로그 입니다.'
-permalink: ':title/'
-baseurl: ''
-url: 'https://drunkencure.github.io/'
+title: Drunkencure
+description: Drunkencure 개발 블로그
 
-# Social
-facebook: 'drunkencire'
-twitter: 'Drunkencire'
-google-plus: #Add your Google+
-github: #Add your Github
+url: https://drunkencure.github.io/
+baseurl: ""
+paginate_path: "blog/page:num/"
+permalink: blog/:title/
 
-# Contact form
-email: 
-
-# Comments
-discus-identifier: # Add your Disqus identifier
-
-# Paginate
-paginate: 5
-paginate_path: /page:num/
-
-# Build settings
 markdown: kramdown
-gems:
-  - jekyll-feed
-  - jekyll-paginate
-exclude:
-  - Gemfile
-  - Gemfile.lock
-include: [_pages]
+highlighter: rouge
+plugins: [jekyll-paginate]
+paginate: 5
+
+navigation:
+  - title: Home
+    url: /index.html
+  - title: About
+    url: /about
+  - title: Contact
+    url: /contact
+
+social:
+  github: drunkencure/drunkencure
+  twitter: drunkencire
+  facebook: drunkencire
+  email: drunkencure@gmail.com
+
+google_analytics: "UA-58263416-1"
