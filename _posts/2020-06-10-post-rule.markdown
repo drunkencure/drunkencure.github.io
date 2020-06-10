@@ -1,0 +1,61 @@
+---
+layout: post
+title:  "포스팅 문법 정리"
+date:   2020-06-10
+---
+# 포스팅에 사용하는 문법
+- 기본적으로 ``markdown`` 문법을 따른다. 
+- ``html`` 코드 문법도 일부 차용한다.
+- 코드를 쓸 경우 아래 문법을 따른다. 
+{% highlight ruby %}
+def print_hi(name)
+  puts "Hi, #{name}"
+end
+print_hi('Tom')
+#=> prints 'Hi, Tom' to STDOUT.
+{% endhighlight %}
+
+- 이미지 입력은 기본적으로 ``html`` 태그를 따른다. 
+{% highlight ruby %}
+<img src="{{ '/assets/img/touring.jpg' | prepend: site.baseurl }}" alt="">
+{% endhighlight %}
+- 사진 아래에 캡션을 붙이는 방법은 다음과 같다. 
+
+{% highlight ruby %}
+<figure>
+	<img src="{{ '/assets/img/touring.jpg' | prepend: site.baseurl }}" alt=""> 
+	<figcaption>Fig1. - This is an example figcaption</figcaption>
+</figure>
+{% endhighlight %}
+
+- ``post``를 쓸때 첫문장을 강조 할 경우에는 ``<p class="intro"> `` 로 시작한다.
+- ``post`` 첫 글자를 크게 강조할 경우에는 ``<span class="dropcap">``을 사용한다.
+예시는 다음과 같다. 
+<p> <span class="dropcap">나</span>는 집에 간다.</p>
+
+- 리스트를 작성할 때는 다음과 같은 문법을 따른다.
+ {% highlight ruby %}
+## 숫자 없는 리스트
+* List Item
+* Longer List Item
+  * Nested List Item
+  * Nested Item
+* List Item
+
+## 숫자 붙임 리스트
+1. List Item
+2. Longer List Item
+    1. Nested OL Item
+    2. Another Nested Item
+3. List Item
+
+## 미리 정의된 리스트
+<dl>
+  <dt>Coffee</dt>
+  <dd>Black hot drink</dd>
+  <dt>Milk</dt>
+  <dd>White cold drink</dd>
+</dl>
+{% endhighlight %}
+
+ 
