@@ -15,6 +15,19 @@
   background: #343642;
   color: #C1C2C3;
 }
+
+.highlight-inline{
+  white-space: pre;
+  overflow: auto;
+  word-wrap: normal; /* horizontal scrolling */
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  padding: 8px;
+  background: #343642;
+  color: #C1C2C3;
+}
+
 .highlight .hll { background-color: #ffc; }
 .highlight .gd { color: #2e3436; background-color: #0e1416; }
 .highlight .gr { color: #eeeeec; background-color: #c00; }
